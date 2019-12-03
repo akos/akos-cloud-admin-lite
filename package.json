@@ -1,5 +1,5 @@
 {
-  "name": "akos-egg-boilerplate-blank",
+  "name": "akos-cloud-admin-lite",
   "version": "0.0.1",
   "description": "a base on vue cloud-ui.vusion boilerplate for akos-egg quickstart",
   "scripts": {
