@@ -8,5 +8,5 @@ const serverPublic = path.join(server, './app/public');
 fs.ensureDirSync(serverPublic);
 fs.emptyDirSync(serverPublic);
 fs.copySync(path.join(client, './public'), serverPublic);
-fs.copySync(path.join(serverPublic, './index.html'), path.join(server, './app/view/index.html'));
+fs.copySync(path.join(serverPublic, './index.html'), path.join(server, './app/view/home.html'));
 fs.removeSync(path.join(serverPublic, './index.html'));
