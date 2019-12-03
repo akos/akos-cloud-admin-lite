@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const fs = require('fs-extra');
+const path = require('path');
+const server = path.join(__dirname, '../../server');
+const client = path.join(__dirname, '../');
+const serverPublic = path.join(server, './app/public');
+fs.ensureDirSync(serverPublic);
+fs.emptyDirSync(serverPublic);
+fs.copySync(path.join(client, './public'), serverPublic);
+fs.copySync(path.join(serverPublic, './index.html'), path.join(server, './app/view/index.html'));
+fs.removeSync(path.join(serverPublic, './index.html'));
