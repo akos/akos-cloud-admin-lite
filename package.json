@@ -1,7 +1,7 @@
 {
   "name": "akos-egg-boilerplate-blank",
   "version": "0.0.1",
-  "description": "a blank boilerplate for akos-egg quickstart",
+  "description": "a base on vue cloud-ui.vusion boilerplate for akos-egg quickstart",
   "scripts": {
     "autod": "autod",
     "lint": "eslint .",
